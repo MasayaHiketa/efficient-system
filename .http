@@ -1,0 +1,87 @@
+@TOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMSIsInVzZXJfaWQiOjQsImV4cCI6MTc2NTA0NDQ3Mn0.klfKerjEh2FQVqXLYTZrt1O98nq3F8pJ4rAhbC4vtnw
+@BASE = http://localhost:8000
+### Regisdter
+POST {{BASE}}/auth/register
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "email": "masaya@example.com",
+  "password": "test123"
+}
+
+### 
+POST {{BASE}}/auth/register
+Content-Type: application/json
+
+{
+  "username": "user4",
+  "email": "user4@example.com",
+  "password": "test123"
+}
+
+###Login
+POST {{BASE}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "password": "test123"
+}
+
+###
+GET {{BASE}}/tasks
+Authorization: Bearer {{TOKEN}}
+###
+POST {{BASE}}/tasks
+Authorization: Bearer {{TOKEN}}
+Content-Type: application/json
+
+{
+  "title": "REST Client Task",
+  "description": "created from VSCode",
+  "status": "todo",
+  "assignee_id": 1,
+  "due_date": "2025-12-05T10:00:00"
+}
+###
+PUT {{BASE}}/tasks/9
+Authorization: Bearer {{TOKEN}}
+Content-Type: application/json
+
+{
+  "title": "Updated title",
+  "status": "in_progress"
+}
+###
+DELETE {{BASE}}/tasks/1
+Authorization: Bearer {{TOKEN}}
+###
+GET {{BASE}}/logs
+Authorization: Bearer {{TOKEN}}
+###
+GET {{BASE}}/logs?year=2025&month=11
+Authorization: Bearer {{TOKEN}}
+###
+GET {{BASE}}/kpi/monthly
+Authorization: Bearer {{TOKEN}}
+###
+GET {{BASE}}/kpi/monthly?year=2025&month=9
+Authorization: Bearer {{TOKEN}}
+
+###
+GET {{BASE}}/kpi/by-user?year=2025&month=11
+Authorization: Bearer {{TOKEN}}
+
+###
+GET {{BASE}}/kpi/completion-rate?year=2025&month=10
+Authorization: Bearer {{TOKEN}}
+
+###
+POST {{BASE}}/tasks/seed/3000
+Authorization: Bearer {{TOKEN}}
+
+
+###
+DELETE {{BASE}}/tasks/reset
+Authorization: Bearer {{TOKEN}}

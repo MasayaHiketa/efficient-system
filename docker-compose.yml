@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:15
+    container_name: efficient_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "Pg18@2025"
+      POSTGRES_DB: efficient_db
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: efficient_api
+    depends_on:
+      - db
+    env_file: []
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: postgres
+      DB_PASSWORD: "Pg18@2025"
+      DB_NAME: efficient_db
+      DATABASE_URL: "postgresql://postgres:Pg18%402025@db:5432/efficient_db"
+    ports:
+      - "8000:8000"
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+volumes:
+  db_data:
