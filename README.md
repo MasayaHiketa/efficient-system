@@ -1,6 +1,6 @@
 ---
 
-# ✅ **Efficient System – Backend API (FastAPI + PostgreSQL + Docker) *
+# ✅ **Efficient System – Backend API (FastAPI + PostgreSQL + Docker) #
 
 **Production-ready backend for task management, activity logs, and KPI analytics**
 
