@@ -9,7 +9,7 @@
 # Efficient System – Backend API (FastAPI + PostgreSQL + Docker)
 
 Efficient System is a backend service for task management, activity logging, and KPI analytics.  
-It is designed for production use, running fully on **Docker** with **FastAPI**, **PostgreSQL**, and **Nginx** (proxy handled by the frontend project).
+It is designed for production use, running fully on Docker with FastAPI, PostgreSQL, and Nginx (proxy handled by the frontend project).
 
 This repository provides:
 - Task CRUD API  
