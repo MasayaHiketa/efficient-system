@@ -6,7 +6,7 @@ The backend is built using **FastAPI**, **PostgreSQL**, and **SQLAlchemy**, feat
 
 ---
 
-## 🚀 Features
+## ✅ Features
 
 - **User Authentication**  
   - JWT-based login  
@@ -32,7 +32,7 @@ The backend is built using **FastAPI**, **PostgreSQL**, and **SQLAlchemy**, feat
 
 ---
 
-## 🏗️ Project Structure
+## ✅ Project Structure
 
 ```
 
@@ -54,7 +54,7 @@ efficient-system/
 
 ---
 
-## 🔧 Environment Variables
+## ✅ Environment Variables
 
 Create a `.env` file:
 
@@ -68,7 +68,7 @@ ALGORITHM=HS256
 
 ---
 
-## ▶️ Run Locally
+## ✅ Run Locally
 
 ### Install dependencies
 ```bash
@@ -87,7 +87,7 @@ uvicorn app.main:app --reload
 
 ---
 
-## 🐳 Run with Docker
+## ✅ Run with Docker
 
 ### Build & Compose
 
@@ -103,7 +103,7 @@ This will start:
 
 ---
 
-## 📌 API Examples
+## ✅ API Examples
 
 ### Login
 
