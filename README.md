@@ -3,7 +3,7 @@
 **Production-ready backend for task management, activity logs, and KPI analytics**
 
 ```md
-```
+
 # Efficient System – Backend API (FastAPI + PostgreSQL + Docker)
 
 Efficient System is a backend service for task management, activity logging, and KPI analytics.  
@@ -16,7 +16,7 @@ This repository provides:
 - KPI analytics (monthly, completion rate, by user)  
 - JWT authentication  
 - Docker-based deployment
-
+```
 
 ## ✅ System Architecture
 
