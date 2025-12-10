@@ -1,4 +1,3 @@
----
 
 ## ✅ **Efficient System – Backend API (FastAPI + PostgreSQL + Docker) ##
 ---
