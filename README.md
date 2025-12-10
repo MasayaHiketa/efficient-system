@@ -239,9 +239,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES=1440
 ## ✅ Deployment Notes
 
 * API is `/api/` when accessed through Nginx
-* Direct FastAPI route is `/`
-* All response models follow Pydantic schemas
-* Designed for production and scalable deployment
+* Direct FastAPI route is /
 
 ---
 
