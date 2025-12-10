@@ -15,7 +15,7 @@ This repository provides:
 - KPI analytics (monthly, completion rate, by user)  
 - JWT authentication  
 - Docker-based deployment  
-
+---
 ---
 ## ✅ System Architecture
 
