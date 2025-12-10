@@ -1,3 +1,4 @@
+---
 # ✅ **Efficient System – Backend API (FastAPI + PostgreSQL + Docker)**
 
 **Production-ready backend for task management, activity logs, and KPI analytics**
@@ -15,7 +16,6 @@ This repository provides:
 - KPI analytics (monthly, completion rate, by user)  
 - JWT authentication  
 - Docker-based deployment  
----
 ---
 ## ✅ System Architecture
 
@@ -240,5 +240,5 @@ ACCESS_TOKEN_EXPIRE_MINUTES=1440
 * Direct FastAPI route is /
 
 ---
-
+---
 
