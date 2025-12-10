@@ -16,7 +16,7 @@ This repository provides:
 - JWT authentication  
 - Docker-based deployment
 
----
+
 ## ✅ System Architecture
 
 ```
